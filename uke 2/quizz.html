@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>3 SPØRSMÅL OM MEG</title>
+</head>
+
+<style>
+
+    body {
+
+        background-color: black;
+        text-align: center;
+    }
+
+    div {
+
+        color: white;
+        text-align: center;
+    }
+
+    h1 {
+
+        color: purple;
+        text-align: center;
+    }
+
+    button {
+
+        background-color:  rgb(255, 119, 255);
+        border: 4px solid purple;
+        text-align: center;
+        border-radius: 12px;
+
+    }
+
+</style>
+<body>
+   <h1>3 SPØRSMÅL OM MEG</h1>
+   <div>Er det sant at jeg er fra Svolvær?</div>
+   <div>Riktig eller galt?</div>
+   <button id="s1" onclick="Spørmål1()">Trykk her for svar</button>
+   
+   <br>
+   <br>
+
+   <div>Er det sant at jeg er 24?</div>
+   <div>Riktig eller galt?</div>
+   <button id="s2" onclick="Spørmål2()">Trykk her for svar</button>
+
+   <br>
+   <br>
+ 
+   <div>Er det sant at jeg elsker ulver?</div>
+   <div>Riktig eller galt?</div>
+   <button id="s3" onclick="Spørmål3()">Trykk her for svar</button>
+
+   
+
+    <script>
+        function Spørmål1() {
+            document.getElementById('s1').innerHTML = 'Feil';
+        }
+
+        function Spørmål2() {
+            document.getElementById('s2').innerHTML = 'Feil';
+        }
+
+        function Spørmål3() {
+            document.getElementById('s3').innerHTML = 'Riktig';
+        }
+
+
+    </script>
+</body>
+</html>

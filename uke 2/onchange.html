@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+
+<body onload="testOnLoad()">
+  <H1>OPPGAVE 2 UKE 2, FØRANDRE ONCLICK AND STUFF </H1>
+    <input type="text" onchange="testOnChange()" oninput="testOnInput()" ondblclick="testOndblclick()" onkeydown="testOnkeydown()" Oncontextmenu="testOncontextmenu()"/>
+    <h3 onmouseover="testOnMouseOver()" onmouseout="testOnMouseOut()" oncontextmenu="testOncontextmenu()">Test test test</h3>
+    <h2 id="info"></h2>
+    <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
+
+ 
+
+   
+  
+
+
+<script>
+
+        function testOnLoad() {
+            document.getElementById('info').innerHTML += '<li>onload</li>';
+        }
+
+        function testOnChange() {
+            document.getElementById('info').innerHTML += '<li>onchange</li>';
+        }
+
+        function testOnInput() {
+            document.getElementById('info').innerHTML += '<li>oninput</li>';
+        }
+
+        function testOnMouseOver() {
+            document.getElementById('info').innerHTML += '<li>onmouseover</li>';
+        }
+
+        function testOnMouseOut() {
+            document.getElementById('info').innerHTML += '<li>onmouseout</li>';
+        }
+
+        function testOndblclick() {
+            // console.log("hei") -trykk ctrl+c+k før å markere ut
+            document.getElementById('info').innerHTML += '<li>Ondblclick</li>'; 
+        }
+
+        function testOnkeydown() {
+            document.getElementById('info').innerHTML += '<li>onkeydown</li>'; 
+            alert("You pressed a key inside the input field");
+        }
+
+        function testOncontextmenu() {
+            document.getElementById('info').innerHTML += '<li>oncontextmenu</li>';
+            alert("du høyreklikka");
+        }
+       
+
+
+      
+
+
+ </script>
+
+
+</body>
+
+
+</html>
+© 2021 GitHub, Inc.

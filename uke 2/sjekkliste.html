@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+ <style>
+    
+.stilig1 {
+    background-color: blueviolet;
+
+ }
+
+.stilig2 {
+    border-style: solid;
+    
+}
+
+.stilig3 {
+    border: 1px solid black;
+    padding: 25px 25px 25px 25px;
+    background-color: lightblue;
+
+}
+
+.stilig4 {
+    border: 1px solid black;
+    margin: 100px 100px 150px 80px;
+    background-color: red;
+
+}
+
+.stilig5 {
+    color: lightblue;
+
+}
+
+
+</style>
+   
+</head>
+
+
+<body>
+
+<div id="op1" onclick="ChooseDiv(this)">OPTION 1</div>
+
+
+
+<input id="chk1" type="checkbox" onchange="toggleStyle1()" />
+<input id="chk2" type="checkbox" onchange="toggleStyle2()" />
+<input id="chk3" type="checkbox" onchange="toggleStyle3()" />
+<input id="chk4" type="checkbox" onchange="toggleStyle4()" />
+<input id="chk5" type="checkbox" onchange="toggleStyle5()" />
+
+
+<script>
+function toggleStyle1() {
+        var isChecked = document.getElementById('chk1').checked;
+            document.getElementById('op1').classList.toggle('stilig1', isChecked);
+}
+
+function toggleStyle2() {
+        var isChecked = document.getElementById('chk2').checked;
+            document.getElementById('op1').classList.toggle('stilig2', isChecked);
+
+}
+
+function toggleStyle3() {
+        var isChecked = document.getElementById('chk3').checked;
+            document.getElementById('op1').classList.toggle('stilig3', isChecked);
+
+}
+
+function toggleStyle4() {
+        var isChecked = document.getElementById('chk4').checked;
+            document.getElementById('op1').classList.toggle('stilig4', isChecked);
+
+}
+
+function toggleStyle5() {
+        var isChecked = document.getElementById('chk5').checked;
+            document.getElementById('op1').classList.toggle('stilig5', isChecked);
+
+}
+
+
+
+function ChooseDiv (clickedDiv) {
+
+    ChooseDiv.classlist.remove('chosen');
+    ChooseDiv=clickedDiv;
+    ChooseDiv.classList.add('chosen');
+
+}
+
+
+
+
+        
+</script>
+   
+
+    
+</body>
+</html>

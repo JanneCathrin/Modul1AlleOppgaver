@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>QUnit Example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css"/>
+</head>
+<body>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+    <script src="java.js"></script>
+   
+   
+   
+   <script>
+       function view() {}
+           let personer = 0;
+           
+     
+
+
+        QUnit.test("ikke gå over 4", function (assert) {
+            opp(1);
+            opp(1);
+            opp(1);
+            opp(1);
+            const actual = personer;
+            const expected = 4;
+            assert.equal(actual, expected);
+
+        });
+
+        
+        QUnit.test("ikke gå under 0", function (assert) {
+            personer = 1;
+            ned(1);
+            const actual = personer;
+            const expected = 0;
+            assert.equal(actual, expected);
+
+        });
+
+        QUnit.test('restart', function (assert) {
+            restart();
+            const actual = personer;
+            const expected = 0;
+            assert.equal(actual, expected);
+      });
+          
+           
+      
+    
+
+
+
+     
+    </script>
+</body>
+</html>
+
